@@ -8,7 +8,7 @@ function fibonacci(num) {
     b = temp;
   }
 
-  return a;
+  return b;
 }
 const num = prompt("Enter the value: ");
 const result = fibonacci(num); 
