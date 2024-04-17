@@ -1,4 +1,3 @@
-const readline = require('readline');
 
 function fibonacci(num) {
 // your code here
@@ -15,13 +14,7 @@ function fibonacci(num) {
   return a;
 }
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-}); 
- const num = prompt("Enter the value: ");
-console.log(result);
-// const num = prompt("Enter the value: ");
-// const result = fibonacci(num); 
-// alert(result);
+const num = prompt("Enter the value: ");
+const result = fibonacci(num); 
+alert(result);
 module.exports = fibonacci;
