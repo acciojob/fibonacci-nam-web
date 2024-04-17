@@ -1,3 +1,5 @@
+const readline = require('readline');
+
 function fibonacci(num) {
 // your code here
   if (num <= 0) return 0;
@@ -9,10 +11,17 @@ function fibonacci(num) {
     a = b;
     b = temp;
   }
-
+	
   return a;
 }
-const num = prompt("Enter the value: ");
-const result = fibonacci(num); 
-alert(result);
-// module.exports = fibonacci;
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+}); 
+ const num = prompt("Enter the value: ");
+console.log(result);
+// const num = prompt("Enter the value: ");
+// const result = fibonacci(num); 
+// alert(result);
+module.exports = fibonacci;
