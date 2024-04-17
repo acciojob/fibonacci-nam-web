@@ -15,4 +15,4 @@ function fibonacci(num) {
 const num = prompt("Enter the value: ");
 const result = fibonacci(num); 
 alert(result);
-module.exports = fibonacci;
+// module.exports = fibonacci;
